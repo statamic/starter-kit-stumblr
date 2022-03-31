@@ -1,5 +1,5 @@
 {
-    "name": "my-vendor-name/starter-kit-stumblr",
+    "name": "statamic/starter-kit-stumblr",
     "extra": {
         "statamic": {
             "name": "Starter Kit Stumblr",
