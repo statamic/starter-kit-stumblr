@@ -4,6 +4,7 @@ export_paths:
   - config/statamic/cp.php
   - content
   - resources/blueprints
+  - resources/fieldsets
   - resources/css
   - resources/views
   - public/assets

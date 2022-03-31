@@ -1,0 +1,18 @@
+title: Generic
+fields:
+  -
+    handle: caption
+    field:
+      restrict: false
+      automatic_line_breaks: true
+      automatic_links: true
+      escape_markup: false
+      smartypants: false
+      antlers: false
+      display: Caption
+      type: markdown
+      icon: markdown
+      instructions: 'Say something about the main post.'
+      listable: hidden
+      instructions_position: above
+      read_only: false
