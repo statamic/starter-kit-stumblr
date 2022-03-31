@@ -47,7 +47,7 @@ sections:
           listable: hidden
           read_only: false
           mode: single
-          time_enabled: true
+          time_enabled: false
           time_seconds_enabled: false
           full_width: false
           inline: false
