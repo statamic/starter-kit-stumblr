@@ -1,0 +1,12 @@
+<section class="text-center">
+    <h1 class="text-5xl font-black">{{ type | title }} Posts</h1>
+</section>
+
+<section class="max-w-lg mx-auto space-y-24 py-24">
+    {{ collection:posts :blueprint:is="type" paginate="20" as="posts" }}
+        {{ posts }}
+            {{ partial:card prose="lg:prose-lg" }}
+        {{ /posts }}
+        {{ partial:pagination }}
+    {{ /collection:posts }}
+</section>

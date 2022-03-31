@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+    <channel>
+        <title>{{ site:name }}</title>
+        <link></link>
+        <generator>https://statamic.com</generator>
+        <description>{{ global:tagline }}</description>
+        <lastBuildDate>{{ collection:posts limit="1" }}{{ date format="r" }}{{ /collection:posts }}</lastBuildDate>
+        <language>en-us</language>
+        <copyright>Copyright {{ now format='Y' }}</copyright>
+        <ttl>3600</ttl>
+        {{ collection:posts }}
+        <item>
+            <title>{{ title | cdata }}</title>
+            <link>{{ permalink }}</link>
+            <guid>{{ permalink }}</guid>
+            <pubDate>{{ date format="r" }}</pubDate>
+            <description>{{ caption | raw | full_urls | cdata }}</description>
+        </item>
+        {{ /collection:posts }}
+    </channel>
+</rss>

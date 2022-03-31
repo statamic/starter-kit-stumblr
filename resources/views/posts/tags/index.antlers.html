@@ -1,0 +1,16 @@
+<article>
+    <section class="text-center">
+        <h1 class="text-5xl font-black">Tags</h1>
+    </section>
+
+    <section class="max-w-2xl mx-auto py-12 lg:py-20 relative z-10 px-4">
+        <ul class="flex flex-wrap text-xl lg:text-2xl justify-center leading-loose">
+        {{ tags sort="title" }}
+            <li class="mr-4 text-gray-400 font-medium">
+                #<a href="{{ url }}" class="text-black font-black hover:text-indigo-800">{{ title }}</a>
+            </li>
+            {{ /tags }}
+        </ul>
+    </section>
+</article>
+

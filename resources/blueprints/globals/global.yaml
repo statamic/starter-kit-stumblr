@@ -1,0 +1,59 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: site_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Site Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: tagline
+        field:
+          antlers: false
+          display: Tagline
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: social_links
+        field:
+          mode: keyed
+          display: 'Social Links'
+          type: array
+          keys:
+            discord: Discord
+            dribbble: Dribbble
+            email: Email
+            facebook: Facebook
+            instagram: Instagram
+            kickstarter: Kickstarter
+            patreon: Patreon
+            pinterest: Pinterest
+            snapchat: Snapchat
+            telegram: Telegram
+            tiktok: Tiktok
+            twitch: Twitch
+            twitter: Twitter
+            whatsapp: Whatsapp
+            youtube: YouTube
+            zoom: Zoom
+      -
+        handle: copyright
+        field:
+          input_type: text
+          antlers: false
+          display: 'Footer Copyright'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false

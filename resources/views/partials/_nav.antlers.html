@@ -1,0 +1,24 @@
+<header class="relative z-10">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-8 px-6">
+        <nav>
+            <ul class="flex items-center space-x-6 font-bold">
+                <li><a class="hover:text-indigo-800" href="/">Posts</a></li>
+                <li><a class="hover:text-indigo-800" href="/posts/tags">Tags</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="flex items-center space-x-6">
+                {{ foreach:social_links }}
+                    <a href="{{ value }}" class="flex items-center justify-center h-7 w-7 hover:text-indigo-800 scale-100 hover:scale-[1.1] hover:-rotate-2" title="{{ label }}">
+                        {{ svg src="assets/icons/{key}" :aria-label="label" role="img" }}
+                    </a>
+                {{ /foreach:social_links }}
+                <li>
+                    <a href="/feed.xml">
+                        {{ svg src="assets/icons/rss" class="w-7 h-7 hover:text-indigo-800 scale-100 hover:scale-[1.1] hover:-rotate-2" aria-label="RSS Feed" role="img" }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

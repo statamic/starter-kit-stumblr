@@ -1,0 +1,12 @@
+<div class="px-4 py-6 space-y-4">
+    <div class="{{ prose ?? 'prose' }} prose-a:text-indigo-800 prose-a:underline leading-normal">
+        {{ caption }}
+    </div>
+    {{ if tags }}
+    <div class="flex flex-wrap text-sm">
+        {{ tags }}
+            <a href="{{ url }}" class="text-gray-600 mr-3 hover:text-black"><span class="text-gray-400">#</span>{{ title }}</a>
+        {{ /tags }}
+    </div>
+    {{ /if }}
+</div>

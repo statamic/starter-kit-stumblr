@@ -1,0 +1,13 @@
+{{ if video_type === "upload" }}
+    <video controls autoplay muted loop class="w-full rounded-t">
+        <source src="{{ video }}" type="video/mp4">
+    </video>
+{{ else }}
+    {{ if video_url | is_embeddable }}
+        <iframe src="{{ video_url | embed_url }}" class="aspect-video w-full rounded-t"></iframe>
+    {{ else }}
+        <video controls autoplay muted loop class="w-full rounded-t">
+            <source src="{{ video_url }}" type="video/mp4">
+        </video>
+    {{ /if }}
+{{ /if }}

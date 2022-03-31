@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? site:name }} | Stumblr</title>
+        <meta name="description" content="{{ global:tagline ?? "My Statamic Stumblr Site" }}">
+        <meta property="og:title" content="{{ title ?? site:name }}">
+        <meta property="og:site_name" content="{{ site_name ?? config:app:name }}">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="{{ site:locale }}">
+        <meta property="og:description" content="{{ global:tagline ?? "My Statamic Stumblr Site" }}">
+        <link rel="sitemap" href="/sitemap.xml" type="application/xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+    </head>
+    <body class="bg-white text-black">
+        <div class="relative z-10">
+            {{ partial:nav }}
+            {{ template_content }}
+            {{ partial:footer }}
+        </div>
+        <div class="bg-pattern h-[700px] absolute top-0 inset-x-0 z-[0]">
+            <div class="w-full h-full bg-gradient-to-t from-white"></div>
+        </div>
+    </body>
+</html>

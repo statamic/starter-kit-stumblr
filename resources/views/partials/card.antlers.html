@@ -1,0 +1,19 @@
+<div class="relative">
+    <div class="absolute -left-24 top-16">
+        <div class="text-center uppercase">
+            <a href="{{ url }}" class="flex flex-col hover:text-indigo-800">
+                <span class="leading-none font-light tracking-widest text-sm">{{ date format="M" }}</span>
+                <span class="leading-none font-black text-3xl">{{ date format="j" }}</span>
+            </a>
+            <a href="{{$ route('posts.type', $blueprint) $}}">
+                {{ svg src="assets/icons/{blueprint}" class="h-10 w-10 my-6 mx-auto hover:text-indigo-800 scale-100 hover:scale-[1.1] hover:rotate-2" }}
+            </a>
+        </div>
+    </div>
+    <div class="rounded-lg shadow-3xl bg-white">
+        <div>
+            {{ partial src="post_types/{blueprint}" }}
+        </div>
+        {{ partial:caption }}
+    </div>
+</div>

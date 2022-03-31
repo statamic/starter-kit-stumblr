@@ -1,0 +1,16 @@
+{{ paginate }}
+    {{ if prev_page || next_page }}
+        <div class="flex justify-center space-x-8">
+            {{ if prev_page }}
+            <a href="{{ prev_page }}">
+                {{ svg src="assets/icons/left" class="w-10 h-10 hover:text-indigo-800 scale-100 hover:scale-[1.1]" aria-label="Go Back" role="img" }}
+            </a>
+            {{ /if }}
+            {{ if next_page }}
+            <a href="{{ next_page }}">
+                {{ svg src="assets/icons/right" class="w-10 h-10 hover:text-indigo-800 scale-100 hover:scale-[1.1]" aria-label="Go Forward" role="img" }}
+            </a>
+            {{ /if }}
+        </div>
+    {{ /if }}
+{{ /paginate }}

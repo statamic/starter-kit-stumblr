@@ -1,0 +1,9 @@
+{
+    "name": "my-vendor-name/starter-kit-stumblr",
+    "extra": {
+        "statamic": {
+            "name": "Starter Kit Stumblr",
+            "description": "Starter Kit Stumblr starter kit"
+        }
+    }
+}

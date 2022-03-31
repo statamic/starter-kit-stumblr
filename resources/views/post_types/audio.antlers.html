@@ -1,0 +1,10 @@
+<figure class="px-3 py-6 border-b text-center">
+    <h2 class="font-bold text-xl">
+        <a class="hover:text-indigo-800" href="{{ url }}">{{ title }}</a>
+    </h2>
+    {{ audio }}
+    <audio controls class="w-full mt-4" width="512">
+        <source src="{{ url }}">
+        {{ /audio }}
+    </audio>
+</figure>

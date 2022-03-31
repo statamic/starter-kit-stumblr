@@ -1,0 +1,8 @@
+title: Global
+data:
+  site_name: 'My Stumblr'
+  tagline: 'Just me posting stuff about everything like such as.'
+  social_links:
+    email: 'mailto:hello@statamic.com'
+    twitter: 'https://twitter.com/statamic'
+  copyright: 'Stumblr by <a href="https://statamic.com">Statamic</a>.'
