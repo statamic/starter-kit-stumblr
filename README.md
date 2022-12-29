@@ -34,6 +34,6 @@ Modify the templates and views however you'd like. Just run `npm install` to ins
 
 ### Adding new "Post Types"
 
-You can create new types of posts by adding new [Blueprints](https://statamic.com/blueprints) to the Posts collection.
+You can create new types of posts by adding new [Blueprints](https://statamic.dev/blueprints) to the Posts collection.
 
 These blueprints need a matching template partial of the same name in `resources/views/post_types/` to render their output.
