@@ -26,11 +26,10 @@ Your RSS Feed is available at `/feed.xml` and sitemap at `/sitemap.xml`.
 
 ### Frontend
 
-Modify the templates and views however you'd like. Just run `npm install` to install the Laravel Mix/webpack tooling and then one of the following commands to compile your css:
+Modify the templates and views however you'd like. Just run `npm install` to install Vite and then one of the following commands to compile your CSS:
 
-- `npm run dev` to compile dev assets
-- `npm run watch` to watch and compile dev assets on the fly
-- `npm run prod` to compile production-ready assets
+- `npm run dev` to run the Vite development server
+- `npm run build` to build and version the assets for production
 
 ### Adding new "Post Types"
 
