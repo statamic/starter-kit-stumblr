@@ -9,9 +9,11 @@
         <nav>
             <ul class="flex items-center space-x-6">
                 {{ foreach:social_links }}
-                    <a href="{{ value }}" class="flex items-center justify-center h-7 w-7 hover:text-indigo-800 scale-100 hover:scale-[1.1] hover:-rotate-2" title="{{ label }}">
-                        {{ svg src="assets/icons/{key}" :aria-label="label" role="img" }}
-                    </a>
+                    {{ if value }}
+                        <a href="{{ value }}" class="flex items-center justify-center h-7 w-7 hover:text-indigo-800 scale-100 hover:scale-[1.1] hover:-rotate-2" title="{{ label }}">
+                            {{ svg src="assets/icons/{key}" :aria-label="label" role="img" }}
+                        </a>
+                    {{ /if }}
                 {{ /foreach:social_links }}
                 <li>
                     <a href="/feed.xml">
