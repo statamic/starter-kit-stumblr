@@ -1,4 +1,6 @@
 <!-- statamic:hide -->
+<p align="center"><img src="https://statamic.com/assets/branding/squircle/statamic-mark-lime.svg" width="100" alt="Statamic Logo" /></p>
+
 # Stumblr
 > Share photos, videos, quotes, links, and more easily with the world. It's like your very own personal Tumblr.
 <!-- /statamic:hide -->
