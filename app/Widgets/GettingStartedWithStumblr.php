@@ -2,6 +2,7 @@
 
 namespace App\Widgets;
 
+use Statamic\Facades\Entry;
 use Statamic\Widgets\Widget;
 
 class GettingStartedWithStumblr extends Widget
@@ -13,7 +14,7 @@ class GettingStartedWithStumblr extends Widget
      */
     public function html()
     {
-        $posts = \Statamic\Facades\Entry::query()->where('collection', 'psts')->count();
+        $posts = Entry::query()->where('collection', 'psts')->count();
 
         return view('widgets.getting-started', compact('posts'));
     }
